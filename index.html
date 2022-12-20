@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.1/dist/aframe-extras.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <a-scene renderer="colorManagement: true">
+
+            <a-camera>
+                <a-cursor></a-cursor>
+            </a-camera>
+
+            <a-assets>
+                <a-asset-item id="main" src="GLB/main.glb">
+                </a-asset-item>
+                <a-asset-item id="page1" src="GLB/p1.glb">
+                </a-asset-item>
+                <a-asset-item id="page2" src="GLB/p2.glb">
+                </a-asset-item>
+                <a-asset-item id="page3" src="GLB/p3.glb">
+                </a-asset-item>
+                <a-asset-item id="page4" src="GLB/p4.glb">
+                </a-asset-item>
+                <a-asset-item id="page5" src="GLB/p5.glb">
+                </a-asset-item>
+                <a-asset-item id="page6" src="GLB/p6.glb">
+                </a-asset-item>
+                <a-asset-item id="enter" src="GLB/enter.glb">
+                </a-asset-item>
+                <a-asset-item id="btn1" src="GLB/btn1_.glb">
+                </a-asset-item>
+                <a-asset-item id="btn2" src="GLB/btn2_.glb">
+                </a-asset-item>
+                <a-asset-item id="btn3" src="GLB/btn3_.glb">
+                </a-asset-item>
+                <a-asset-item id="btn4" src="GLB/btn4_.glb">
+                </a-asset-item>
+                <a-asset-item id="btn5" src="GLB/btn5_.glb">
+                </a-asset-item>
+                <a-asset-item id="btn6" src="GLB/btn6_.glb">
+                </a-asset-item>
+
+                <a-asset-item id="intro" src="GLB/intro.glb">
+                </a-asset-item>
+                <a-asset-item id="intro2" src="GLB/intro2.glb">
+                </a-asset-item>
+                <a-asset-item id="intro3" src="GLB/intro3.glb">
+                </a-asset-item>
+                <a-asset-item id="intro4" src="GLB/intro4.glb">
+                </a-asset-item>
+            </a-assets>
+
+            <a-entity gltf-model="#main"></a-entity>
+
+            <a-entity 
+                id="page_1" gltf-model="#page1" position="-15 0 -27"></a-entity>
+            <a-entity 
+                id="page_2" gltf-model="#page2" position="-10 0 -32"></a-entity>
+            <a-entity
+                id="page_3" gltf-model="#page3" position="-3.5 0 -35"></a-entity>
+            <a-entity
+                id="page_4" gltf-model="#page4" position="3.5 0 -35"></a-entity>
+            <a-entity 
+                id="page_5" gltf-model="#page5" position="10 0 -32"></a-entity>
+            <a-entity
+                id="page_6" gltf-model="#page6" position="15 0 -27"></a-entity>
+
+
+            <a-entity id="enter_" gltf-model="#enter" ></a-entity>
+
+            <a-entity id="intro_" gltf-model="#intro"></a-entity>
+            <a-entity id="intro2_" gltf-model="#intro2"></a-entity>
+            <a-entity id="intro3_" gltf-model="#intro3"></a-entity>
+            <a-entity id="intro4_" gltf-model="#intro4"></a-entity>
+
+            <a-entity 
+                id="btn_1" gltf-model="#btn1"
+                animation-mixer="clip: Cube.004Action;"></a-entity>
+            <a-entity 
+                id="btn_2" gltf-model="#btn2"
+                animation-mixer="clip: Cube.006Action;"></a-entity>
+            <a-entity 
+                id="btn_3" gltf-model="#btn3"
+                animation-mixer="clip: Cube.003Action;"></a-entity>
+            <a-entity 
+                id="btn_4" gltf-model="#btn4"
+                animation-mixer="clip: Cube.010Action;"></a-entity>
+            <a-entity 
+                id="btn_5" gltf-model="#btn5"
+                animation-mixer="clip: Cube.011Action.002;"></a-entity>
+            <a-entity 
+                id="btn_6" gltf-model="#btn6"
+                animation-mixer="clip: Cube.008Action;"></a-entity>
+            
+            <a-box
+                id="intro_box"
+                color="red" position = "-10.5 -0.2 -11.5" width="10.2" height="5.2" depth="0.2" opacity="0">
+            </a-box>
+            <a-box
+            id="intro_box2"
+            color="red" position = "10.5 -0.2 -11.5" width="10.2" height="5.2" depth="0.2" opacity="0">
+            </a-box>
+            
+            <a-box
+                id="box1"
+                color="red" position="-15 3 -27" scale="0.5 1 2" rotation="0 -34 0" opacity="0">
+            </a-box>
+            <a-box
+                id="box2"
+                color="red" position="-10 3 -32" scale="0.5 1 2" rotation="0 -55 0" opacity="0">
+            </a-box>
+            <a-box
+                id="box3"
+                color="red" position="-3.5 3 -35" scale="0.5 1 2" rotation="0 100 0" opacity="0">
+            </a-box>
+            <a-box
+                id="box4"
+                color="red" position="3.5 3 -35" scale="0.5 1 2" rotation="0 -100 0" opacity="0">
+            </a-box>
+            <a-box
+                id="box5"
+                color="red" position="10 3 -32" scale="0.5 1 2" rotation="0 55 0" opacity="0">
+            </a-box>
+            <a-box
+                id="box6"
+                color="red" position="15 3 -27" scale="0.5 1 2" rotation="0 34 0" opacity="0">
+            </a-box>
+
+        </a-scene>
+    </body>
+
+    <script>
+
+        let enterbox = document.querySelector('#enter_');
+        enterbox.addEventListener('click',function(){
+            enterbox.removeAttribute("animaton-mixer")
+            enterbox.setAttribute("animation-mixer","clip : Plane.001Action; loop:once")
+        });
+
+        // let introbox = document.querySelector('#intro_');
+        // introbox.addEventListener('mouseenter',function(){
+        //     introbox.removeAttribute("animaton-mixer")
+        //     introbox.setAttribute("animation-mixer","clip : Cylinder.034Action.002; loop:once")
+        // });
+        // let introbox2 = document.querySelector('#intro_');
+        // introbox2.addEventListener('mouseleave',function(){
+        //     introbox2.removeAttribute("animaton-mixer")
+        //     introbox2.setAttribute("animation-mixer","clip : Cylinder.034Action.003; loop:once")
+        // });
+
+        document
+            .querySelector("#intro_box")
+            .addEventListener("mouseenter", e=> {
+                document.querySelector("#intro_").removeAttribute("animaton-mixer")
+                document.querySelector("#intro_").setAttribute("animation-mixer","clip : Cylinder.034Action.002; loop:once")
+            });
+        document
+            .querySelector("#intro_box")
+            .addEventListener("mouseleave", e=> {
+                document.querySelector("#intro_").removeAttribute("animaton-mixer")
+                document.querySelector("#intro_").setAttribute("animation-mixer","clip : Cylinder.034Action.003; loop:once")
+            });
+
+        document
+            .querySelector("#intro_box2")
+            .addEventListener("mouseenter", e=> {
+                document.querySelector("#intro3_").removeAttribute("animaton-mixer")
+                document.querySelector("#intro3_").setAttribute("animation-mixer","clip : Cylinder.036Action; loop:once")
+            });
+        document
+            .querySelector("#intro_box2")
+            .addEventListener("mouseleave", e=> {
+                document.querySelector("#intro3_").removeAttribute("animaton-mixer")
+                document.querySelector("#intro3_").setAttribute("animation-mixer","clip : Cylinder.036Action.001; loop:once")
+            });
+
+        document
+            .querySelector("#page_1")
+            .addEventListener("click", e=> {
+                location.href = "sub2.html";
+            });
+        document
+            .querySelector("#box1")
+            .addEventListener("mouseenter", e=> {
+                document.querySelector("#page_1").removeAttribute('animation')
+                document.querySelector("#page_1").setAttribute('animation', "property:rotation; to:0 180 0; dur:1000; loop:1; easing:easeOutElastic;")
+            });
+        document
+            .querySelector("#box1")
+            .addEventListener("mouseleave", e=> {
+                document.querySelector("#page_1").removeAttribute('animation')
+                document.querySelector("#page_1").setAttribute('animation', "property:rotation; to:0 360 0; dur:1000; loop:1; easing:easeOutElastic;")
+            });
+
+
+        // document
+        //     .querySelector("#page_2")
+        //     .addEventListener("click", e=> {
+        //         location.href = "sub2.html";
+        //     });
+        document
+            .querySelector("#box2")
+            .addEventListener("mouseenter", e=> {
+                document.querySelector("#page_2").removeAttribute('animation')
+                document.querySelector("#page_2").setAttribute('animation', "property:rotation; to:0 180 0; dur:1000; loop:1; easing:easeOutElastic;")
+            });
+        document
+            .querySelector("#box2")
+            .addEventListener("mouseleave", e=> {
+                document.querySelector("#page_2").removeAttribute('animation')
+                document.querySelector("#page_2").setAttribute('animation', "property:rotation; to:0 360 0; dur:1000; loop:1; easing:easeOutElastic;")
+            });
+
+
+        document
+            .querySelector("#page_3")
+            .addEventListener("click", e=> {
+                location.href = "sub1.html";
+            });
+        document
+            .querySelector("#box3")
+            .addEventListener("mouseenter", e=> {
+                document.querySelector("#page_3").removeAttribute('animation')
+                document.querySelector("#page_3").setAttribute('animation', "property:rotation; to:0 180 0; dur:1000; loop:1; easing:easeOutElastic;")
+            });
+        document
+            .querySelector("#box3")
+            .addEventListener("mouseleave", e=> {
+                document.querySelector("#page_3").removeAttribute('animation')
+                document.querySelector("#page_3").setAttribute('animation', "property:rotation; to:0 360 0; dur:1000; loop:1; easing:easeOutElastic;")
+            });
+
+
+        // document
+        //     .querySelector("#page_4")
+        //     .addEventListener("click", e=> {
+        //         location.href = "sub4.html";
+        //     });
+        document
+            .querySelector("#box4")
+            .addEventListener("mouseenter", e=> {
+                document.querySelector("#page_4").removeAttribute('animation')
+                document.querySelector("#page_4").setAttribute('animation', "property:rotation; to:0 180 0; dur:1000; loop:1; easing:easeOutElastic;")
+            });
+        document
+            .querySelector("#box4")
+            .addEventListener("mouseleave", e=> {
+                document.querySelector("#page_4").removeAttribute('animation')
+                document.querySelector("#page_4").setAttribute('animation', "property:rotation; to:0 360 0; dur:1000; loop:1; easing:easeOutElastic;")
+            });
+
+
+        // document
+        //     .querySelector("#page_5")
+        //     .addEventListener("click", e=> {
+        //         location.href = "sub5.html";
+        //     });
+        document
+            .querySelector("#box5")
+            .addEventListener("mouseenter", e=> {
+                document.querySelector("#page_5").removeAttribute('animation')
+                document.querySelector("#page_5").setAttribute('animation', "property:rotation; to:0 180 0; dur:1000; loop:1; easing:easeOutElastic;")
+            });
+        document
+            .querySelector("#box5")
+            .addEventListener("mouseleave", e=> {
+                document.querySelector("#page_5").removeAttribute('animation')
+                document.querySelector("#page_5").setAttribute('animation', "property:rotation; to:0 360 0; dur:1000; loop:1; easing:easeOutElastic;")
+            });
+
+
+        document
+            .querySelector("#page_6")
+            .addEventListener("click", e=> {
+                location.href = "sub_improve.html";
+            });
+        document
+            .querySelector("#box6")
+            .addEventListener("mouseenter", e=> {
+                document.querySelector("#page_6").removeAttribute('animation')
+                document.querySelector("#page_6").setAttribute('animation', "property:rotation; to:0 180 0; dur:1000; loop:1; easing:easeOutElastic;")
+            });
+        document
+            .querySelector("#box6")
+            .addEventListener("mouseleave", e=> {
+                document.querySelector("#page_6").removeAttribute('animation')
+                document.querySelector("#page_6").setAttribute('animation', "property:rotation; to:0 360 0; dur:1000; loop:1; easing:easeOutElastic;")
+            });
+    </script>
+</html>
